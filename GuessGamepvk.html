@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vinayFoodPointWebApp</title>
+    <link rel="stylesheet" href="guessgame.css" />
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+      </head>
+      <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid bg-container">
+      <div class="row bg-white">
+        <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+          <img
+            class="guess-game-img"
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png"
+          />
+          <div class="bg-secondary text-center pb-2">
+            <p class="text-center name">Enter your name :</p>
+            <input type="text" id="username" />
+          </div>
+          <p class="text-center game-description">
+            Find out the right number between 1 to 100
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 guess-bg-container text-center">
+          <h1 class="guess-heading">
+            Guess The Number
+            <img
+              class="guess-number-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png"
+            />
+          </h1>
+          <input type="text" class="user-input" id="userInput" />
+          <div>
+            <button class="btn btn-info check-guess" onclick="checkGuess()">
+              Check
+            </button>
+          </div>
+          <p class="game-result" id="gameResult"></p>
+          <button class="btn" id="button" onclick="replay()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="guessgamevk.js"></script>
+  </body>
+</html>
